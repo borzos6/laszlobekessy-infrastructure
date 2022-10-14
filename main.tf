@@ -25,14 +25,14 @@ module "networking" {
 # ==================================== #
 # Routing module
 # ==================================== #
-# module "routing" {
-#   source = "./routing"
+module "routing" {
+  source = "./routing"
 
-#   providers = {
-#     aws.us_east_1    = aws.us_east_1
-#     aws.eu_central_1 = aws.eu_central_1
-#   }
-# }
+  providers = {
+    aws.us_east_1    = aws.us_east_1
+    aws.eu_central_1 = aws.eu_central_1
+  }
+}
 
 # ==================================== #
 # Security module
