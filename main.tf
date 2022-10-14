@@ -62,11 +62,11 @@ module "utility" {
 # Applications
 # ==================================== #
 # -------- laszlo.bekessy.me --------- #
-# module "laszlo_bekessy_me" {
-#   source = "./laszlo_bekessy_me"
+module "laszlo_bekessy_me" {
+  source = "./laszlo_bekessy_me"
 
-#   providers = {
-#     aws.us_east_1    = aws.us_east_1
-#     aws.eu_central_1 = aws.eu_central_1
-#   }
-# }
+  providers = {
+    aws.us_east_1    = aws.us_east_1
+    aws.eu_central_1 = aws.eu_central_1
+  }
+}
