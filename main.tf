@@ -37,26 +37,26 @@ module "routing" {
 # ==================================== #
 # Security module
 # ==================================== #
-# module "security" {
-#   source = "./security"
+module "security" {
+  source = "./security"
 
-#   providers = {
-#     aws.us_east_1    = aws.us_east_1
-#     aws.eu_central_1 = aws.eu_central_1
-#   }
-# }
+  providers = {
+    aws.us_east_1    = aws.us_east_1
+    aws.eu_central_1 = aws.eu_central_1
+  }
+}
 
 # ==================================== #
 # Utility module
 # ==================================== #
-# module "utility" {
-#   source = "./utility"
+module "utility" {
+  source = "./utility"
 
-#   providers = {
-#     aws.us_east_1    = aws.us_east_1
-#     aws.eu_central_1 = aws.eu_central_1
-#   }
-# }
+  providers = {
+    aws.us_east_1    = aws.us_east_1
+    aws.eu_central_1 = aws.eu_central_1
+  }
+}
 
 # ==================================== #
 # Applications

@@ -7,7 +7,6 @@ resource "aws_s3_bucket" "laszlobekessy_cloudfront_logs" {
   force_destroy = false
 }
 
-
 resource "aws_s3_bucket_lifecycle_configuration" "laszlobekessy_cloudfront_logs_lifecycle_configuration" {
   bucket = aws_s3_bucket.laszlobekessy_cloudfront_logs.id
 

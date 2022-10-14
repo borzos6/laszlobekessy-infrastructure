@@ -3,8 +3,8 @@
 # ==================================== #
 resource "aws_acm_certificate" "bekessy_me_us_east_1" {
   provider                  = aws.us_east_1
-  domain_name               = "bekessy_me"
-  subject_alternative_names = ["*.bekessy_me"]
+  domain_name               = "bekessy.me"
+  subject_alternative_names = ["*.bekessy.me"]
   validation_method         = "DNS"
 
   options {
