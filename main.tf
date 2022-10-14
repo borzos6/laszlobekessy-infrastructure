@@ -5,6 +5,7 @@ module "logging" {
   source = "./logging"
 
   providers = {
+    aws.us_east_1    = aws.us_east_1
     aws.eu_central_1 = aws.eu_central_1
   }
 }
@@ -12,14 +13,14 @@ module "logging" {
 # ==================================== #
 # Networking module
 # ==================================== #
-# module "networking" {
-#   source = "./networking"
+module "networking" {
+  source = "./networking"
 
-#   providers = {
-#     aws.us_east_1    = aws.us_east_1
-#     aws.eu_central_1 = aws.eu_central_1
-#   }
-# }
+  providers = {
+    aws.us_east_1    = aws.us_east_1
+    aws.eu_central_1 = aws.eu_central_1
+  }
+}
 
 # ==================================== #
 # Routing module

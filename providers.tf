@@ -26,3 +26,12 @@ provider "aws" {
     tags = { terraformed = true }
   }
 }
+
+provider "aws" {
+  alias   = "us_east_1"
+  region  = "us-east-1"
+  profile = "laszlobekessy-terraform"
+  default_tags {
+    tags = { terraformed = true }
+  }
+}

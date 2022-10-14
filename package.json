@@ -16,7 +16,7 @@
     "format": "terraform fmt -write=true -diff=true -recursive",
     "prepare": "npm run format && npm run validate && npm run adoc",
     "doc": "call() { terraform-docs markdown --output-file=README.md \"$1\"; }; call",
-    "adoc": "npm run doc",
+    "adoc": "terraform-docs markdown . --recursive --output-file=README.md --recursive-path=.",
     "import": "call() { AWS_PROFILE=laszlobekessy-terraform terraform import \"$1\" \"$2\"; }; call"
   },
   "repository": {
