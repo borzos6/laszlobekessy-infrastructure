@@ -1,0 +1,10 @@
+%echo Generating a default key
+Key-Type: default
+Subkey-Type: default
+Name-Real: Laszlo Bekessy
+Name-Comment: Personal
+Name-Email: laszlo@bekessy.me
+Expire-Date: 2
+Passphrase: PersonalTerraform
+%commit
+%echo done

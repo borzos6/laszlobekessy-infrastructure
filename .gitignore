@@ -1,29 +1,25 @@
-# Local .terraform directories
-**/.terraform/*
+# General
+.DS_Store
+.idea
+.vscode
 
-# .tfstate files
-*.tfstate
-*.tfstate.*
-
-# Crash log files
+# Terraform
+.terraform
+.terraform.lock.hcl
+tf.out
 crash.log
 
-# Ignore any .tfvars files that are generated automatically for each Terraform run. Most
-# .tfvars files are managed as part of configuration and so should be included in
-# version control.
-#
-# example.tfvars
+# Logs
+logs
 
-# Ignore override files as they are usually used to override resources locally and so
-# are not checked in
-override.tf
-override.tf.json
-*_override.tf
-*_override.tf.json
+# Encryption
+pgp/*
+!pgp/decrypt-secrets.sh
+!pgp/key-gen-template
+*.gpg
 
-# Include override files you do wish to add to version control using negated pattern
-#
-# !example_override.tf
+# Terraformer output
+.terraformer
 
-# Include tfplan files to ignore the plan output of command: terraform plan -out=tfplan
-# example: *tfplan*
+# Node modules
+node_modules
