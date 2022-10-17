@@ -34,8 +34,11 @@ resource "aws_route53_record" "mta__domainkey_bekessy_me_txt_record" {
 resource "aws_route53_record" "bekessy_me_txt_record" {
   provider = aws.us_east_1
   name     = "bekessy.me"
-  records  = ["v=spf1 include:mailgun.org ~all"]
-  ttl      = 300
-  type     = "TXT"
-  zone_id  = aws_route53_zone.bekessy_me_zone.zone_id
+  records = [
+    "google-site-verification=pijNi4OyFxn6ej6uSvYNMoDnBKmWUx8ITSGdekI0B4s",
+    "v=spf1 include:mailgun.org ~all"
+  ]
+  ttl     = 300
+  type    = "TXT"
+  zone_id = aws_route53_zone.bekessy_me_zone.zone_id
 }
